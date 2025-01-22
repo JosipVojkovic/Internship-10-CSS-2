@@ -1,0 +1,28 @@
+@font-face {
+  font-family: "Neue Machina";
+  src: url("../fonts/NeueMachina/NeueMachina-Regular.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --orangeColor: #ff482f;
+  --backgroundColor: #f5ede1;
+  --darkGrayColor: #171615b2;
+  --lightGrayColor: #eaeaea;
+  --mainFont: "Neue Machina";
+  --font-size-h1: 120px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--mainFont);
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: var(--backgroundColor);
+}

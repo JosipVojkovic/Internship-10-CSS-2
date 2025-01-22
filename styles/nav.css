@@ -1,0 +1,28 @@
+nav {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 20px;
+}
+
+nav .centered {
+  text-align: center;
+}
+
+nav h3,
+nav button {
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+}
+
+nav button {
+  padding: 14px 16px;
+  border: none;
+  background-color: var(--lightGrayColor);
+  cursor: pointer;
+}
