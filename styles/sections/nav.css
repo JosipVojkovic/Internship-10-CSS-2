@@ -4,9 +4,10 @@ nav {
   justify-content: space-between;
   position: fixed;
   width: 100%;
-  top: 0;
+  top: 20px;
   left: 0;
-  padding: 20px;
+  padding: 24px 44px;
+  z-index: 100;
 }
 
 nav .centered {
@@ -22,7 +23,16 @@ nav button {
 
 nav button {
   padding: 14px 16px;
+  width: 179px;
+  height: 44px;
   border: none;
   background-color: var(--lightGrayColor);
   cursor: pointer;
+  color: black;
+  transition: 0.5s ease;
+}
+
+nav button:hover {
+  background-color: rgb(79, 20, 135);
+  color: white;
 }

@@ -1,0 +1,14 @@
+:root {
+  --orangeColor: #ff482f;
+  --backgroundColor: #f5ede1;
+  --darkGrayColor: #171615b2;
+  --lightGrayColor: #eaeaea;
+}
+
+.main-container {
+  background-color: var(--backgroundColor);
+}
+
+h1 {
+  color: var(--lightGrayColor);
+}

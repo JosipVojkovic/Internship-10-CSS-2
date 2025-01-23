@@ -1,0 +1,22 @@
+@font-face {
+  font-family: "Neue Machina";
+  src: url("../fonts/NeueMachina/NeueMachina-Regular.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --mainFont: "Neue Machina";
+  --font-size-h1: 120px;
+  --font-size-h2: 48px;
+  --font-size-h4: 24px;
+  --font-size-p: 14px;
+}
+
+* {
+  font-family: var(--mainFont);
+}
+
+h1 {
+  font-size: var(--font-size-h1);
+}
