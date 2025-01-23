@@ -8,13 +8,6 @@
 @import url(/styles/sections/nav.css);
 @import url(/styles/sections/header.css);
 
-@font-face {
-  font-family: "Neue Machina";
-  src: url("../fonts/NeueMachina/NeueMachina-Regular.otf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -24,5 +17,6 @@
 .main-container {
   display: flex;
   flex-direction: column;
+
   padding: 20px;
 }

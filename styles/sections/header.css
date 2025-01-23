@@ -1,20 +1,24 @@
 header {
   position: relative;
-  background: url(/images/Hero\ background.png) no-repeat center;
-  background-size: cover;
+  overflow: hidden;
+  height: 729px;
+  padding: 0 25px;
+
   display: flex;
   flex-direction: column;
-  height: 729px;
-  overflow: hidden;
-  padding: 0 25px;
+
+  background: url(/images/Hero\ background.png) no-repeat center;
+  background-size: cover;
 }
 
 header .headers {
-  display: flex;
   margin: auto 0;
+  z-index: 1;
+
+  display: flex;
   align-items: center;
   column-gap: 40px;
-  z-index: 1;
+
   animation: slide 20s infinite linear;
   white-space: nowrap;
   will-change: transform;
