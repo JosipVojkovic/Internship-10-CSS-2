@@ -7,6 +7,7 @@
 
 @import url(/styles/sections/nav.css);
 @import url(/styles/sections/header.css);
+@import url(/styles/sections/footer.css);
 
 * {
   margin: 0;
