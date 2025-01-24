@@ -18,7 +18,7 @@ nav .centered {
 
 nav h3,
 nav button {
-  font-size: 14px;
+  font-size: var(--font-size-p);
   font-weight: 500;
   color: white;
 }
