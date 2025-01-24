@@ -7,7 +7,7 @@ header {
   display: flex;
   flex-direction: column;
 
-  background: url(/images/Hero\ background.svg) no-repeat center;
+  background: url(/images/Hero\ background.svg) no-repeat;
   background-size: cover;
 }
 
@@ -100,4 +100,75 @@ header ul a {
 
 header ul a:hover {
   text-decoration: underline;
+}
+
+.mobile-heading-container {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  header {
+    padding: 44px 25px 0 25px;
+  }
+
+  .occupations-container {
+    column-gap: 20px;
+  }
+
+  header .occupations-container > img {
+    width: calc(118.38px / 1.5);
+    height: calc(142.75px / 1.5);
+  }
+
+  header .occupation-banner > h1,
+  header .occupations-container > img {
+    margin-bottom: 130px;
+  }
+
+  .mobile-display-none {
+    display: none;
+  }
+
+  .mobile-heading-container {
+    position: absolute;
+    bottom: 44px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 24px;
+
+    width: 100%;
+    z-index: 1;
+  }
+
+  .mobile-heading-container h3,
+  .mobile-heading-container button {
+    font-size: var(--font-size-p);
+    font-weight: 500;
+    color: white;
+  }
+
+  .mobile-heading-container h3 {
+    text-align: center;
+  }
+
+  .mobile-heading-container button {
+    padding: 14px 16px;
+    width: 343px;
+    height: 44px;
+    border: none;
+
+    background-color: var(--lightGrayColor);
+    color: black;
+
+    cursor: pointer;
+    transition: 0.5s ease;
+  }
+
+  .mobile-heading-container button:hover {
+    background-color: rgb(79, 20, 135);
+    color: white;
+  }
 }
