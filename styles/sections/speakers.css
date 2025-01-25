@@ -1,4 +1,4 @@
-.speakers {
+  .speakers {
   background-color: #E4573E;  
   overflow: hidden;
   position: relative;
@@ -18,20 +18,6 @@
   opacity: 0.5;
   mix-blend-mode: soft-light;
 }
-.texture {
-    position: relative; 
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    mix-blend-mode: multiply;
-    opacity: 0.5;
-    mix-blend-mode: soft-light;
-    z-index: 1; 
-    height: 100%;
-  }
-  
   .border {
     position: absolute;
     top: 0;
@@ -43,7 +29,8 @@
     display: flex; 
     flex-wrap: wrap; 
     justify-content: center;
-    gap: 50px; 
+    gap: 40px; 
+    text-align: center;
   }
   
   .speaker1, .speaker2, .speaker3, .speaker4, .speaker5 {
@@ -51,10 +38,6 @@
     width: 315px; 
     height: auto; 
     flex: 0 0 calc(40% - 20px);
-    z-index: 3;
-  }
-  .speaker1{
-    padding-right: 10%;
   }
   .speaker2{
     margin-right: auto;
@@ -70,108 +53,26 @@
   }
   .speaker5{
     margin-right: auto;
-    padding-right: 10%;
   }
   .speaker6{
-    margin-right: auto;
-   padding-right: 15%;
-    margin-top: 160px;
-  }
-  
-  
-  .presenter-container {
-    position: relative;
-    width: 315px;
-    height: 419px;
-    overflow: hidden;
-    margin: 0 auto; 
+    position: relative; 
+    width: 315px; 
+    height: auto; 
+    flex: 0 0 calc(40% - 20px);
+    z-index: 3;
+    right: 115px;
+    margin-top: 240px; 
+    padding-right: 35%;
+    opacity: 0.3;
   }
   .speakers h3{
     font-size:24px ;
     font-weight: 500;
+    padding-top: 15px;
   }
   .speakers p{
     font-size: 14px;
     font-weight: 500;
-  }
-  
-  .film-frame {
-    position: absolute;
-    width: 100%; 
-    height: 100%; 
-    z-index: 5;
-  }
-  
-  .film-frame-content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-  }
-  
-  .film-frame__backgorund {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover; 
-    z-index: 3 ; 
-  }
-  
-  .presenter-img {
-    position: absolute;
-    width: 120%;
-    height: 100%;
-    object-fit: cover;
-    margin-left: -80px;
-    z-index:4 ;
-  }
-  .speaker2 .presenter-img{
-    margin-left: auto;
-    height: auto;
-  }
-  .speaker3 .presenter-img{
-    margin-left: auto;
-    padding-left: 15px;
-    height: auto;
-    width: 110%;
-  }
-  .speaker4 .presenter-img{
-   width: 150%;
-   margin-left: auto;
-   height: 80%;
-   padding-left: 25%;
-   bottom: 10px;
-  }
-  .speaker5 .presenter-img{
-    width: 190%;
-   margin-left: auto;
-   height: 85%;
-   padding-left: 45%;
-   bottom: 10px;
-  }
-  .speaker6 .presenter-img{
-    margin-left: auto;
-    padding-left: 25%;
-    width: 150%;
-  }
-  .speaker-blender{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    mix-blend-mode: multiply;
-    opacity: 0.5;
-    mix-blend-mode: soft-light;
-    z-index: 1; 
-    height: 100%;
   }
   .speakers figcaption{
     text-align: center;
@@ -201,6 +102,28 @@
     color: #FFFFFFB2;
     line-height: 16px;
   }
+  .look-button{
+    background: none; 
+    border: none; 
+    outline: none;
+    color: black;
+    font-family: var(--mainFont);
+    margin-bottom: auto;
+    font-weight: 500;
+    font-size: 14px;
+    margin-left: auto;
+    margin-top: 60px;
+  }
+  .autoshow {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  .autoshow.visible {
+    opacity: 1;
+  }
+  .autoshow.speaker6.visible {
+    opacity: 0.3;
+  }
+
+
   
-
-
