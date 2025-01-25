@@ -7,7 +7,7 @@ header {
   display: flex;
   flex-direction: column;
 
-  background: url(/images/Hero\ background.svg) no-repeat;
+  background: url(../../images/HeroBackground.svg) no-repeat;
   background-size: cover;
 }
 
@@ -169,7 +169,7 @@ header .occupation-banner img {
   justify-content: space-between;
   padding: 44px 24px;
   z-index: 5;
-  background: url(/images/Hero\ background.svg) no-repeat #ffffff;
+  background: url(../../images/HeroBackground.svg) no-repeat #fff;
   background-size: cover;
   transform: translateX(100%);
   transition: transform 0.3s ease-in-out;

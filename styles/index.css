@@ -1,11 +1,11 @@
 /* definitions */
 
-@import url(/styles/definitions/fonts.css);
-@import url(/styles/definitions/colors.css);
+@import url(./definitions/fonts.css);
+@import url(./definitions/colors.css);
 
 /* sections */
 
-@import url(/styles/sections/header.css);
+@import url(./sections/header.css);
 
 * {
   margin: 0;
