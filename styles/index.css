@@ -6,6 +6,7 @@
 /* sections */
 
 @import url(./sections/header.css);
+@import url(./sections/footer.css);
 
 * {
   margin: 0;
