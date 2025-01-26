@@ -9,6 +9,7 @@
 @import url(/styles/sections/nav.css);
 @import url(/styles/sections/header.css);
 @import url(/styles/sections/speakers.css);
+@import url(/styles/sections/location.css);
 
 * {
   margin: 0;

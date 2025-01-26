@@ -49,20 +49,14 @@
   }
   .speaker4{
     margin-top: 160px;
-    padding-left: 10%;
   }
   .speaker5{
     margin-right: auto;
   }
   .speaker6{
-    position: relative; 
-    width: 315px; 
-    height: auto; 
-    flex: 0 0 calc(40% - 20px);
-    z-index: 3;
-    right: 115px;
-    margin-top: 240px; 
-    padding-right: 35%;
+   margin-right: auto;
+   margin-top: 160px;
+   padding-right: 10%;
     opacity: 0.3;
   }
   .speakers h3{
@@ -95,12 +89,19 @@
     color: white;
   }
   .speakers-header h4{
-    font-size: 14px;
+    font-size: 24px;
     font-family: var(--mainFont);
     font-weight: 500;
     text-align: center;
     color: #FFFFFFB2;
     line-height: 16px;
+  }
+  .button-container {
+    position: absolute;  
+    top: 80%;         
+    left: 50%;           
+    transform: translate(-50%, -50%); 
+    text-align: center;
   }
   .look-button{
     background: none; 
@@ -124,6 +125,89 @@
   .autoshow.speaker6.visible {
     opacity: 0.3;
   }
+
+  @media (max-width: 1024px) {
+    .speaker-boxes {
+      flex-direction: row;
+    }
+    .speaker2, .speaker4 {
+      margin-top: 250px;
+    } 
+    .speaker2{
+      right: 20px;
+    }
+    .speaker1, .speaker2, .speaker3, .speaker4, .speaker5, .speaker6 {
+      flex: 0 0 calc(50% - 20px);
+    }
+    .button-container {
+      padding-left: 100px;
+    }
+  }
+
+
+  @media (max-width: 900px) {
+  
+    .speaker1, .speaker2, .speaker3, .speaker4, .speaker5 {
+      flex: 0 0 calc(50% - 30px);  
+    }
+    .speaker1,.speaker5{
+     padding-left: 15px;
+    }
+    .speaker4{
+      padding-right: 15px;
+    }
+  
+    .button-container {
+      text-align: center;
+      margin-top: 180px;
+      width: 100%;
+      margin-left: -30px;
+    }
+    .look-button{
+      font-size: x-large;
+      width: 100%;
+    }
+    .speaker6 {
+      transform: scale(0.8); 
+      flex: 0 0 calc(60% - 20px); 
+      margin-left: auto; 
+      margin-bottom: -100px;
+      margin-right: -8px;
+      padding-right: 10px;
+    }
+    .speaker-boxes img {
+      width: 100%;
+      height: auto;
+    }
+    .speakers-header{
+      width: 100%;
+    }
+    .speakers-header h2{
+      font-size: 60px;
+      text-align: center;
+      margin: 0;
+    }
+    .speakers-header h4{
+      font-size: 24px;
+      text-align: center;
+      line-height: 2;
+    }
+  }
+
+  @media(max-width: 600px){
+    .look-button{
+      font-size: large;
+      width: 100%;
+    }
+  }
+  @media(max-width: 400px){
+    .look-button{
+      font-size: large;
+      width: 100%;
+    }
+  }
+  
+
 
 
   
