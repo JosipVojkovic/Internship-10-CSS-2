@@ -7,6 +7,7 @@
 
 @import url(./sections/header.css);
 @import url(./sections/footer.css);
+@import url(./sections/registration.css);
 
 * {
   margin: 0;

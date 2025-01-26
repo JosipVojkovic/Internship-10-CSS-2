@@ -1,0 +1,78 @@
+@font-face {
+    font-family: "Neue Montreal";
+    src: url("../../fonts/NeueMontreal/PPNeueMontrealMono-Thin.otf")
+      format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+.registration-section {
+    position: relative;
+    background-color: black;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .registration-divider {
+    position: absolute;
+    top: 0; 
+    background: transparent;
+    background-size: cover;
+    height: 100px;
+    width: 100%;
+    margin-top: -10px;
+    z-index: 1;
+  }
+  
+  .registration-divider img {
+    width: 100%;
+    display: block;
+    filter: brightness(0) contrast(1);
+  }
+  
+  .app-text-wrapper {
+    margin-bottom: 10px;
+    margin-top: 40px;
+  }
+  
+  .app-text {
+    font-size: 14px;
+    color: white;
+    font-family: "Neue Montreal";
+    width: 93px;
+    height: 16px;
+    margin: 0 auto;
+    margin-top: 100px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0.7;
+  }
+  
+  .register-text-wrapper {
+    margin-bottom: 20px;
+  }
+  
+  .register-text {
+    font-size: 120px;
+    line-height: 144px;
+    margin: 0;
+  }
+  
+  .image-wrapper {
+    margin-top: -80px; 
+    margin-bottom: 5rem;
+    z-index: 2;
+    width: 1335px;
+    height: 750px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .app-mockup {
+    width: 100%;
+    object-fit: contain; 
+    height: 100%;
+  }
