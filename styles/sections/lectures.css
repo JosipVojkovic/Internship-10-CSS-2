@@ -65,7 +65,8 @@
 .lectures-list .lecture-info-container {
   display: flex;
   justify-content: space-between;
-  padding: 0 60px;
+  align-items: center;
+  padding: 0 30px;
 }
 
 .lectures-list .lecture-time {
@@ -75,17 +76,21 @@
   font-family: var(--secondaryFont), sans-serif;
   font-weight: 500;
   text-align: right;
+  width: 131px;
+  font-size: var(--font-size-p);
 }
 
 .lectures-list .lecture-time span:nth-of-type(2),
 .lecture-details span {
   color: rgba(23, 22, 21, 0.6);
+  font-size: var(--font-size-p);
 }
 
 .lectures-list .lecture-details {
   display: flex;
   flex-direction: column;
   row-gap: 7px;
+  width: 745px;
 }
 
 .lecture-details h3 {
@@ -111,8 +116,8 @@
 
 .lectures-list .speaker-img img {
   position: absolute;
-  top: -120%;
-  left: 0;
+  top: -80px;
+  right: 0;
 }
 
 .lectures-list .plus-icon {
