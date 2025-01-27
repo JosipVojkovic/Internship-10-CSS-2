@@ -1,0 +1,96 @@
+.conference {
+  display: flex;
+  gap: 20px;
+  padding: 40px;
+  background-color: var(--backgroundColor);
+}
+
+.conference-header {
+  display: flex;
+  row-gap: 100px;
+  flex-direction: column;
+  width: 45vw;
+}
+
+.conference .sticky-duck-container {
+  height: 850px;
+  position: relative;
+}
+
+.conference .sticky-duck {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 60%;
+}
+
+.conference-details {
+  display: flex;
+  justify-content: flex-start;
+  gap: 100px;
+  flex-direction: column;
+  width: 45vw;
+  height: 100%;
+}
+
+.conference-header h3 {
+  font-size: var(--font-size-p);
+  font-family: var(--secondaryFont), sans-serif;
+  font-weight: 500;
+  color: rgba(23, 22, 21, 1);
+}
+
+.conference-details p {
+  max-width: 472px;
+
+  font-family: var(--mainFontBold);
+  font-size: var(--font-size-h4);
+  font-weight: 500;
+  color: rgba(23, 22, 21, 0.7);
+}
+
+.conference-details .statistics-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  row-gap: 100px;
+  flex-wrap: wrap;
+  max-width: 472px;
+}
+
+.conference-details .statistic {
+  display: flex;
+  flex-direction: column;
+}
+
+.conference-details .stat-number {
+  color: var(--orangeColor);
+  font-size: 100px;
+  font-weight: 500;
+}
+
+.conference-details .stat-description {
+  font-size: var(--font-size-p);
+  font-weight: 500;
+  color: rgba(23, 22, 21, 0.7);
+}
+
+@media screen and (max-width: 840px) {
+  .conference {
+    position: relative;
+  }
+
+  .conference .sticky-duck-container {
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: max-content;
+    bottom: 0;
+    right: -110px;
+  }
+
+  .conference .sticky-duck {
+    position: relative;
+  }
+}
