@@ -7,6 +7,8 @@
 .location{
     background-color: #085F59;  
     position: relative;
+    max-width: 100%;
+    min-height: 200vh;
 }
 .location::before {
     content: "";
@@ -22,12 +24,55 @@
     opacity: 20%;
     mix-blend-mode: soft-light;
   }
+  .location h2{
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 120px;
+    font-family: var(--mainFont);
+    font-weight: 500;
+  }
   .location-header{
-    max-width: none;
+    padding-top: 50px;
+    margin-bottom: 160px;
   }
-.location-image{
-    height: auto;   
+.location-content{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  max-width: 100%;
+  min-height: 90vh;
+  }
+
+  .markica-div{
+    z-index: 2;
+    height: 50%;
+    position: relative;
+    align-self: center;
+    top: -100px;
+  }
+  .markica{
+  }
+  .background-house-div{
+    z-index: 1;
     max-width: 100%;
+    position: absolute;
+    bottom:0;
+    max-height: 56%;
   }
+  .background-house{
+    width: 100%;
+    opacity: 0.3;
+  }
+  .house-div{
+    z-index: 3;
+    max-width: 100%;
+    position: absolute;
+    bottom: 0;
+  }
+  .house{
+    width: 100%;
+  }
+
   
 
