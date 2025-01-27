@@ -75,9 +75,12 @@
   color: rgba(23, 22, 21, 0.7);
 }
 
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 830px) {
   .conference {
     position: relative;
+    flex-direction: column;
+    row-gap: 100px;
+    padding: 40px 15px 200px 15px;
   }
 
   .conference .sticky-duck-container {
@@ -92,5 +95,27 @@
 
   .conference .sticky-duck {
     position: relative;
+    width: 347px;
+  }
+
+  .conference-details,
+  .conference-header {
+    width: 100%;
+  }
+
+  .conference-details p {
+    max-width: max-content;
+  }
+
+  .conference .statistics-container {
+    max-width: 400px;
+  }
+
+  .conference-details .stat-number {
+    font-size: 72px;
+  }
+
+  .conference-details .statistic {
+    width: max-content;
   }
 }
