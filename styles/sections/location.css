@@ -1,0 +1,33 @@
+.border1{
+    width: 100%;
+    margin-top: -30px;
+    z-index: 10;
+    position: relative;
+}
+.location{
+    background-color: #085F59;  
+    position: relative;
+}
+.location::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200%;
+    background-image: url(/images/transition/noise.png); 
+    background-size: cover;
+    background-position: center;
+    mix-blend-mode: multiply;
+    opacity: 20%;
+    mix-blend-mode: soft-light;
+  }
+  .location-header{
+    max-width: none;
+  }
+.location-image{
+    height: auto;   
+    max-width: 100%;
+  }
+  
+

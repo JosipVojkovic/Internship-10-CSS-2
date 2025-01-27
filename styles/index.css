@@ -3,10 +3,13 @@
 @import url(./definitions/fonts.css);
 @import url(./definitions/colors.css);
 
+
 /* sections */
 
 @import url(./sections/header.css);
 @import url(./sections/footer.css);
+@import url(./sections/speakers.css);
+@import url(./sections/location.css);
 
 * {
   margin: 0;
@@ -26,3 +29,4 @@
     padding: 0;
   }
 }
+
