@@ -9,36 +9,98 @@
   <body>
     <div class="main-container">
       <header>
+        <div class="expanded-menu">
+          <h3>IZBORNIK</h3>
+          <ul>
+            <li><a href="">KONFERENCIJA</a></li>
+            <li><a href="">SPEAKERI</a></li>
+            <li><a href="">RASPORED</a></li>
+            <li><a href="">SPONZORI</a></li>
+            <li><a href="">KONTAKT</a></li>
+          </ul>
+          <hr />
+          <div class="expanded-menu-heading-container">
+            <button>REGISTRIRAJ SE</button>
+            <h3>BESPLATNA KONFERENCIJA<br />ZA NOVU GENERACIJU</h3>
+          </div>
+        </div>
         <nav>
           <h3>SPLIT // FESB<br />23. - 24. 05. 2024.</h3>
-          <h3 class="centered">
+          <h3 class="centered mobile-display-none">
             BESPLATNA KONFERENCIJA<br />ZA NOVU GENERACIJU
           </h3>
-          <button>REGISTRIRAJ SE</button>
+          <button class="mobile-display-none">REGISTRIRAJ SE</button>
+          <div class="mobile-menu-icon">
+            <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+            <label for="menu-toggle" class="mobile-menu">
+              <div class="burger-icon-line"></div>
+              <div class="burger-icon-line"></div>
+              <div class="burger-icon-line"></div>
+              <div class="expanded-menu">
+                <h3>IZBORNIK</h3>
+                <ul>
+                  <li><a href="">KONFERENCIJA</a></li>
+                  <li><a href="">SPEAKERI</a></li>
+                  <li><a href="">RASPORED</a></li>
+                  <li><a href="">SPONZORI</a></li>
+                  <li><a href="">KONTAKT</a></li>
+                </ul>
+                <hr />
+                <div class="expanded-menu-heading-container">
+                  <button>REGISTRIRAJ SE</button>
+                  <h3>BESPLATNA KONFERENCIJA<br />ZA NOVU GENERACIJU</h3>
+                </div>
+              </div>
+            </label>
+          </div>
         </nav>
-        <div class="headers">
-          <h1>DIGITALACA</h1>
-          <img src="/images/Days Sticker.png" alt="" />
-          <h1>MARKETINGAŠA</h1>
-          <img src="/images/Days Sticker.png" alt="" />
-          <h1>PROGRAMERA</h1>
-          <img src="/images/Days Sticker.png" alt="" />
-          <h1>DIZAJNERA</h1>
-          <img src="/images/Days Sticker.png" alt="" />
-          <h1>PODUZETNIKA</h1>
-          <img src="/images/Days Sticker.png" alt="" />
-          <h1>DIGITALACA</h1>
-          <img src="/images/Days Sticker.png" alt="" />
-          <h1>MARKETINGAŠA</h1>
+        <div class="occupations-container">
+          <div class="occupation-banner">
+            <h1>DIGITALACA</h1>
+            <img src="images/Zanimanja/Digitalac.png" alt="" />
+          </div>
+          <img src="images/Days Sticker.png" alt="" />
+          <div class="occupation-banner">
+            <h1>MARKETINGAŠA</h1>
+            <img src="images/Zanimanja/Marketingaš.png" alt="" />
+          </div>
+          <img src="images/Days Sticker.png" alt="" />
+          <div class="occupation-banner">
+            <h1>PROGRAMERA</h1>
+            <img src="images/Zanimanja/Programer.png" alt="" />
+          </div>
+          <img src="images/Days Sticker.png" alt="" />
+          <div class="occupation-banner">
+            <h1>DIZAJNERA</h1>
+            <img src="images/Zanimanja/Dizajner.png" alt="" />
+          </div>
+          <img src="images/Days Sticker.png" alt="" />
+          <div class="occupation-banner">
+            <h1>PODUZETNIKA</h1>
+            <img src="images/Zanimanja/Poduzetnik.png" alt="" />
+          </div>
+          <img src="images/Days Sticker.png" alt="" />
+          <div class="occupation-banner">
+            <h1>DIGITALACA</h1>
+            <img src="images/Zanimanja/Digitalac.png" alt="" />
+          </div>
+          <img src="images/Days Sticker.png" alt="" />
+          <div class="occupation-banner">
+            <h1>MARKETINGAŠA</h1>
+            <img src="images/Zanimanja/Marketingaš.png" alt="" />
+          </div>
         </div>
-        <img src="/images/Digitalac.png" alt="" class="header-image" />
-        <ul>
+        <ul class="desktop-menu-list">
           <li><a href="">KONFERENCIJA</a></li>
           <li><a href="">SPEAKERI</a></li>
           <li><a href="">RASPORED</a></li>
           <li><a href="">SPONZORI</a></li>
           <li><a href="">KONTAKT</a></li>
         </ul>
+        <div class="mobile-heading-container">
+          <button>REGISTRIRAJ SE</button>
+          <h3>BESPLATNA KONFERENCIJA<br />ZA NOVU GENERACIJU</h3>
+        </div>
       </header>
       <section class="statistics"></section>
       <section class=""></section>
@@ -50,8 +112,9 @@
       <section class=""></section>
       <section class=""></section>
       <section class=""></section>
+      <section class=""></section>
     </div>
-
+    
     <main>
       <section class="speakers">
           <div>
@@ -139,13 +202,67 @@
           <img src="/images/transition/greenBorder.png" alt="" class="border1" />
         </div>
 
-    
-
       </section>
     </main>
 
-    
-    <script src="script.js"></script>
+    <footer>
+      <div class="footer-container">
+        <img
+          src="images/Hero background.png"
+          alt="Footer background"
+          class="footer-background"
+        />
+        <div class="footer-content">
+          <h2 class="footer-title">
+            TL;DR<br />
+            DOĐI NA DAYSE.
+          </h2>
+          <a href=""
+            ><button class="footer-registration">
+              [ REGISTRIRAJ SVOJ DOLAZAK ]
+            </button>
+          </a>
+          <img src="images/footer-duckie.webp" alt="Duck" class="footer-duck" />
+          <img
+            src="images/days-sticker.webp"
+            alt="Days logo"
+            class="footer-logo"
+          />
+        </div>
+        <div class="footer-divider">
+          <img src="./images/section-breaker.png" alt="section breaker" />
+        </div>
+      </div>
+      <div class="footer-social">
+        <h2 class="social-title">IMAŠ JOŠ PITANJA?</h2>
+        <a href="#"
+          ><button class="footer-contact">[ KONTAKTIRAJ DUMPOVCE ]</button>
+        </a>
+        <div class="social-links">
+          <a href="#" class="social-link"
+            ><img src="images/facebook.png" alt="Facebook"
+          /></a>
+          <a href="#" class="social-link"
+            ><img src="images/linkedin.png" alt="LinkedIn"
+          /></a>
+          <a href="#" class="social-link"
+            ><img src="images/instagram.png" alt="Instagram"
+          /></a>
+          <a href="#" class="social-link"
+            ><img src="images/yt.png" alt="YouTube"
+          /></a>
+        </div>
+        <div class="line"></div>
+        <p class="footer-credits">
+          <span class="credits-left">© DUMPDAYS</span>
+          <span class="credits-right"
+            >NAPRAVLJENO JEDVA, NA PRIŠU, SA NIKAKVIM PM SKILLOVIMA — AL'IZ
+            ČISTE LJUBAVI.</span
+          >
+        </p>
+      </div>
+    </footer>
 
   </body>
+<script src="script.js"></script>
 </html>
