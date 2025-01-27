@@ -1,8 +1,13 @@
 .conference {
   display: flex;
-  gap: 20px;
-  padding: 40px;
+  flex-direction: column;
   background-color: var(--backgroundColor);
+}
+
+.conference-info {
+  display: flex;
+  gap: 20px;
+  padding: 40px 40px 0px 40px;
 }
 
 .conference-header {
@@ -12,12 +17,12 @@
   width: 45vw;
 }
 
-.conference .sticky-duck-container {
+.conference-info .sticky-duck-container {
   height: 850px;
   position: relative;
 }
 
-.conference .sticky-duck {
+.conference-info .sticky-duck {
   position: sticky;
   top: 0;
   left: 0;
@@ -75,15 +80,28 @@
   color: rgba(23, 22, 21, 0.7);
 }
 
+.conference-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+}
+
+.conference-gallery img {
+  flex: 1 1 calc(25% - 20px);
+  min-width: 163px;
+}
+
 @media screen and (max-width: 830px) {
-  .conference {
+  .conference-info {
     position: relative;
     flex-direction: column;
     row-gap: 100px;
     padding: 40px 15px 200px 15px;
   }
 
-  .conference .sticky-duck-container {
+  .conference-info .sticky-duck-container {
     position: absolute;
     display: flex;
     justify-content: flex-end;
@@ -93,7 +111,7 @@
     right: -110px;
   }
 
-  .conference .sticky-duck {
+  .conference-info .sticky-duck {
     position: relative;
     width: 347px;
   }
@@ -107,7 +125,7 @@
     max-width: max-content;
   }
 
-  .conference .statistics-container {
+  .conference-info .statistics-container {
     max-width: 400px;
   }
 
@@ -117,5 +135,9 @@
 
   .conference-details .statistic {
     width: max-content;
+  }
+
+  .conference-gallery img {
+    flex: 1 1 calc(50% - 20px);
   }
 }
