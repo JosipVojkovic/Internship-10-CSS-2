@@ -8,7 +8,7 @@
     background-color: #085F59;  
     position: relative;
     max-width: 100%;
-    min-height: 200vh;
+    min-height: 220vh;
 }
 .location::before {
     content: "";
@@ -28,7 +28,7 @@
     color: white;
     text-align: center;
     padding: 20px;
-    font-size: 120px;
+    font-size: 140px;
     font-family: var(--mainFont);
     font-weight: 500;
   }
@@ -41,7 +41,7 @@
   flex-direction: column;
   position: relative;
   max-width: 100%;
-  min-height: 90vh;
+  min-height: 95vh;
   }
 
   .markica-div{
@@ -49,7 +49,7 @@
     height: 50%;
     position: relative;
     align-self: center;
-    top: -100px;
+    top: -80px;
   }
   .markica{
   }
@@ -58,7 +58,6 @@
     max-width: 100%;
     position: absolute;
     bottom:0;
-    max-height: 56%;
   }
   .background-house{
     width: 100%;
@@ -73,6 +72,66 @@
   .house{
     width: 100%;
   }
+  .location-text{
+    display: flex;
+
+  }
+  .location-aside{
+    max-width: 20%;
+    text-align: center;
+    margin-left: 40px;
+  }
+  .location-aside h5{
+    color: #FFFFFFB2;
+    font-size: 14px;
+    font-family: var(--mainFont);
+    font-weight: 500;
+  }
+  .location-figure{
+    max-width: 42%;
+    margin-left: 20%;
+    padding: 20px;
+    align-self: center;
+    display: flex;
+  }
+  .location-figure img{
+    width: 10%;
+    height: 10%;
+    top: 0px;
+    left: 0;
+    padding-right: 20px;
+    padding-top: 5px;
+  }
+  .location-text figcaption{
+    color: #FFFFFFB2;
+    font-size: 24px;
+    font-family: var(--mainFont);
+    font-weight: 500;
+  }
+  .location hr{
+    max-width: 90%;
+    border: none;
+    border-top: 5px dotted #FFFFFFB2;
+    margin: auto;
+    margin-top: 30px;
+    opacity: 0.4;
+  }
+  .location-date{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.2;
+  }
+  .location-date h3{
+    font-size:260px;
+    flex-direction: column;
+    font-weight: 500;
+    color: #FFFFFFB2;
+  }
+  
+
 
   
 
