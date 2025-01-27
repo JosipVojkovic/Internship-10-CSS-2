@@ -3,7 +3,6 @@
 @import url(./definitions/fonts.css);
 @import url(./definitions/colors.css);
 
-
 /* sections */
 
 @import url(./sections/header.css);
@@ -29,4 +28,3 @@
     padding: 0;
   }
 }
-
