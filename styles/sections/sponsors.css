@@ -1,0 +1,127 @@
+.sponsors {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--backgroundColor);
+  padding: 0 20px;
+}
+
+.sponsors .sponsors-heading {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  text-align: center;
+  margin-bottom: 30%;
+}
+
+.sponsors .sponsors-heading span {
+  font-size: var(--font-size-p);
+  font-family: var(--secondaryFont), sans-serif;
+  color: rgba(23, 22, 21, 0.6);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.sponsors .sponsors-heading h2 {
+  font-size: var(--font-size-h2);
+  color: var(--orangeColor);
+  line-height: var(--font-size-h2);
+  letter-spacing: -2px;
+}
+
+.sponsors-container {
+  display: flex;
+  flex-direction: column;
+  gap: 160px;
+}
+
+.gold-sponsors {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.sponsors .gold-medal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sponsors .gold-medal p {
+  color: rgba(23, 22, 21, 0.6);
+  font-size: var(--font-size-p);
+  font-family: var(--secondaryFont), sans-serif;
+  letter-spacing: 1px;
+}
+
+.gold-sponsors > img {
+  margin: 0 auto;
+  width: 138px;
+}
+
+.gold-sponsors-gallery {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.gold-sponsors-gallery .gold-sponsor {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.gold-sponsors-gallery .gold-sponsor > img {
+  width: 100%;
+}
+
+.sponsor-details {
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  gap: 10px;
+}
+
+.sponsor-details h4 {
+  text-align: center;
+  font-size: var(--font-size-h4);
+  letter-spacing: -0.5px;
+  color: rgba(23, 22, 21, 1);
+}
+
+.sponsor-details hr {
+  border: none;
+  height: 6px;
+  background: radial-gradient(circle, rgba(23, 22, 21, 0.3), transparent 30%);
+  background-size: 8px 8px;
+  background-repeat: repeat-x;
+}
+
+.sponsor-details .open-positions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 5px;
+}
+
+.sponsor-details .open-positions p {
+  color: rgba(23, 22, 21, 0.6);
+  font-size: var(--font-size-p);
+  font-family: var(--secondaryFont), sans-serif;
+  letter-spacing: 1px;
+}
+
+.sponsor-details .open-positions span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
+  width: 40px;
+  background-color: var(--orangeColor);
+  border-radius: 50%;
+  font-size: var(--font-size-p);
+  font-family: var(--secondaryFont), sans-serif;
+  font-weight: 500;
+  color: white;
+}
