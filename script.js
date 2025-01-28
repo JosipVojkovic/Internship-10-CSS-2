@@ -41,3 +41,26 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+const lecturesObserver = new IntersectionObserver(
+  (entries, lecturesObserver) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        // Dodaj klasu koja aktivira animaciju
+        entry.target.classList.add("fadeIn");
+        // Prestanimo pratiti nakon što je animacija počela
+        lecturesObserver.unobserve(entry.target);
+      }
+    });
+  },
+  { threshold: 0.5 }
+); // Aktivira kada je 50% elementa na ekranu
+
+// Pratimo sve h3 elemente unutar .lecture-details
+document.querySelectorAll(".lecture-details h3").forEach((h3) => {
+  lecturesObserver.observe(h3);
+});
+
+document.querySelectorAll(".lecture-details span").forEach((span) => {
+  lecturesObserver.observe(span);
+});

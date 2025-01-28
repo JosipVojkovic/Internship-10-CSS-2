@@ -147,6 +147,15 @@
   font-size: 18px;
   font-weight: 600;
   color: rgba(23, 22, 21, 1);
+  transform: translateY(-20px);
+  opacity: 0;
+  transition: opacity 0.2s ease-out 0.1s, transform 0.2s ease-out 0.1s;
+}
+
+.lecture-details span {
+  transform: translateY(-20px);
+  opacity: 0;
+  transition: opacity 0.4s ease-out 0.1s, transform 0.4s ease-out 0.1s;
 }
 
 .lecture-details .orange-elipse {
@@ -204,6 +213,22 @@
   background: radial-gradient(circle, rgba(23, 22, 21, 0.3), transparent 30%);
   background-size: 8px 8px;
   background-repeat: repeat-x;
+}
+
+.lectures .fadeIn {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @media screen and (max-width: 1150px) {
