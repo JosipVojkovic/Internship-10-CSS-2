@@ -32,6 +32,7 @@ nav .centered {
 nav h3,
 nav button {
   font-size: var(--font-size-p);
+  font-family: var(--secondaryFont), sans-serif;
   font-weight: 500;
   color: white;
 }
@@ -43,7 +44,7 @@ nav button {
   border: none;
 
   background-color: var(--lightGrayColor);
-  color: black;
+  color: rgba(18, 18, 18, 1);
 
   cursor: pointer;
   transition: 0.5s ease;
@@ -143,8 +144,23 @@ header .occupation-banner img {
   z-index: 1;
 }
 
+.desktop-menu-list li {
+  width: 104px;
+  text-align: center;
+}
+
+.desktop-menu-list li:first-of-type {
+  text-align: left;
+}
+
+.desktop-menu-list li:last-of-type {
+  text-align: right;
+}
+
 .desktop-menu-list a {
   font-size: var(--font-size-p);
+  font-family: var(--secondaryFont), sans-serif;
+  font-weight: 500;
   text-decoration: none;
   color: white;
 }
@@ -177,6 +193,7 @@ header .occupation-banner img {
 
 .expanded-menu h3 {
   font-size: var(--font-size-p);
+  font-family: var(--secondaryFont) sans-serif;
   font-weight: 500;
   color: white;
 }
@@ -217,6 +234,7 @@ header .occupation-banner img {
 .expanded-menu-heading-container h3,
 .expanded-menu-heading-container button {
   font-size: var(--font-size-p);
+  font-family: var(--secondaryFont), sans-serif;
   font-weight: 500;
   color: white;
 }
@@ -232,7 +250,7 @@ header .occupation-banner img {
   border: none;
 
   background-color: var(--lightGrayColor);
-  color: black;
+  color: rgba(18, 18, 18, 1);
 
   cursor: pointer;
   transition: 0.5s ease;

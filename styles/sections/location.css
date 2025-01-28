@@ -1,9 +1,10 @@
-.border1{
-    width: 100%;
-    margin-top: -30px;
-    z-index: 10;
-    position: relative;
+.border1 {
+  width: 100%;
+  margin-top: -30px;
+  z-index: 10;
+  position: relative;
 }
+
 .location{
     background-color: #085F59;  
     position: relative;
@@ -131,7 +132,3 @@
     color: #FFFFFFB2;
   }
   
-
-
-  
-

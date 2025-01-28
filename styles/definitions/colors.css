@@ -1,6 +1,6 @@
 :root {
   --orangeColor: #ff482f;
-  --backgroundColor: #f5ede1;
+  --backgroundColor: rgba(245, 237, 225, 1);
   --darkGrayColor: #171615b2;
   --lightGrayColor: #eaeaea;
 }

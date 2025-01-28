@@ -1,5 +1,5 @@
-  .speakers {
-  background-color: #E4573E;  
+.speakers {
+  background-color: #e4573e;
   overflow: hidden;
   position: relative;
 }
@@ -11,203 +11,213 @@
   left: 0;
   width: 200%;
   height: 200%;
-  background-image: url(/images/transition/noise.png); 
+  background-image: url(../../images/transition/noise.png);
   background-size: cover;
   background-position: center;
   mix-blend-mode: multiply;
   opacity: 0.5;
   mix-blend-mode: soft-light;
 }
-  .border {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 2
-  }
+
+.border {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.speaker-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  text-align: center;
+}
+
+.speaker1,
+.speaker2,
+.speaker3,
+.speaker4,
+.speaker5 {
+  position: relative;
+  width: 315px;
+  height: auto;
+  flex: 0 0 calc(40% - 20px);
+}
+.speaker2 {
+  margin-right: auto;
+  margin-top: 160px;
+  padding-left: 5%;
+}
+.speaker3 {
+  margin-left: auto;
+}
+.speaker4 {
+  margin-top: 160px;
+}
+.speaker5 {
+  margin-right: auto;
+}
+.speaker6 {
+  margin-right: auto;
+  margin-top: 160px;
+  padding-right: 10%;
+  opacity: 0.3;
+}
+.speakers h3 {
+  font-size: 24px;
+  font-weight: 500;
+  padding-top: 15px;
+}
+.speakers p {
+  font-size: 14px;
+  font-weight: 500;
+}
+.speakers figcaption {
+  text-align: center;
+  font-family: var(--primaryFont), sans-serif;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: -0.5px;
+  color: white;
+}
+.speakers-header {
+  width: 60%;
+  margin: 200px auto 50px;
+}
+.speakers-header h2 {
+  font-size: 120px;
+  font-family: var(--primaryFont), sans-serif;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 20px;
+  color: white;
+}
+.speakers-header h4 {
+  font-size: 24px;
+  font-family: var(--primaryFont), sans-serif;
+  font-weight: 500;
+  text-align: center;
+  color: #ffffffb2;
+  line-height: 16px;
+}
+.button-container {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.look-button {
+  background: none;
+  border: none;
+  outline: none;
+  color: black;
+  font-family: var(--primaryFont), sans-serif;
+  margin-bottom: auto;
+  font-weight: 500;
+  font-size: 14px;
+  margin-left: auto;
+  margin-top: 60px;
+}
+.autoshow {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+.autoshow.visible {
+  opacity: 1;
+}
+.autoshow.speaker6.visible {
+  opacity: 0.3;
+}
+
+@media screen and (max-width: 1024px) {
   .speaker-boxes {
-    display: flex; 
-    flex-wrap: wrap; 
-    justify-content: center;
-    gap: 40px; 
-    text-align: center;
+    flex-direction: row;
   }
-  
-  .speaker1, .speaker2, .speaker3, .speaker4, .speaker5 {
-    position: relative; 
-    width: 315px; 
-    height: auto; 
-    flex: 0 0 calc(40% - 20px);
+  .speaker2,
+  .speaker4 {
+    margin-top: 250px;
   }
-  .speaker2{
-    margin-right: auto;
-    margin-top: 160px;
-    padding-left: 5%;
+  .speaker2 {
+    right: 20px;
   }
-  .speaker3{
-    margin-left: auto;
-  }
-  .speaker4{
-    margin-top: 160px;
-  }
-  .speaker5{
-    margin-right: auto;
-  }
-  .speaker6{
-   margin-right: auto;
-   margin-top: 160px;
-   padding-right: 10%;
-    opacity: 0.3;
-  }
-  .speakers h3{
-    font-size:24px ;
-    font-weight: 500;
-    padding-top: 15px;
-  }
-  .speakers p{
-    font-size: 14px;
-    font-weight: 500;
-  }
-  .speakers figcaption{
-    text-align: center;
-    font-family: PP Neue Machina;
-    font-weight: 500;
-    line-height: 32px;
-    letter-spacing: -0.5px;
-    color: white;
-  }
-  .speakers-header{
-    width: 60%;
-    margin: 200px auto 50px ;
-  }
-  .speakers-header h2{
-    font-size: 120px;
-    font-family: var(--mainFont);
-    font-weight: 500;
-    text-align: center;
-    margin-bottom: 20px;
-    color: white;
-  }
-  .speakers-header h4{
-    font-size: 24px;
-    font-family: var(--mainFont);
-    font-weight: 500;
-    text-align: center;
-    color: #FFFFFFB2;
-    line-height: 16px;
+  .speaker1,
+  .speaker2,
+  .speaker3,
+  .speaker4,
+  .speaker5,
+  .speaker6 {
+    flex: 0 0 calc(50% - 20px);
   }
   .button-container {
-    position: absolute;  
-    top: 80%;         
-    left: 50%;           
-    transform: translate(-50%, -50%); 
+    padding-left: 100px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .speaker1,
+  .speaker2,
+  .speaker3,
+  .speaker4,
+  .speaker5 {
+    flex: 0 0 calc(50% - 30px);
+  }
+  .speaker1,
+  .speaker5 {
+    padding-left: 15px;
+  }
+  .speaker4 {
+    padding-right: 15px;
+  }
+
+  .button-container {
     text-align: center;
+    margin-top: 180px;
+    width: 100%;
+    margin-left: -30px;
   }
-  .look-button{
-    background: none; 
-    border: none; 
-    outline: none;
-    color: black;
-    font-family: var(--mainFont);
-    margin-bottom: auto;
-    font-weight: 500;
-    font-size: 14px;
+  .look-button {
+    font-size: x-large;
+    width: 100%;
+  }
+  .speaker6 {
+    transform: scale(0.8);
+    flex: 0 0 calc(60% - 20px);
     margin-left: auto;
-    margin-top: 60px;
+    margin-bottom: -100px;
+    margin-right: -8px;
+    padding-right: 10px;
   }
-  .autoshow {
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
+  .speaker-boxes img {
+    width: 100%;
+    height: auto;
   }
-  .autoshow.visible {
-    opacity: 1;
+  .speakers-header {
+    width: 100%;
   }
-  .autoshow.speaker6.visible {
-    opacity: 0.3;
+  .speakers-header h2 {
+    font-size: 60px;
+    text-align: center;
+    margin: 0;
   }
+  .speakers-header h4 {
+    font-size: 24px;
+    text-align: center;
+    line-height: 2;
+  }
+}
 
-  @media (max-width: 1024px) {
-    .speaker-boxes {
-      flex-direction: row;
-    }
-    .speaker2, .speaker4 {
-      margin-top: 250px;
-    } 
-    .speaker2{
-      right: 20px;
-    }
-    .speaker1, .speaker2, .speaker3, .speaker4, .speaker5, .speaker6 {
-      flex: 0 0 calc(50% - 20px);
-    }
-    .button-container {
-      padding-left: 100px;
-    }
+@media (max-width: 600px) {
+  .look-button {
+    font-size: large;
+    width: 100%;
   }
-
-
-  @media (max-width: 900px) {
-  
-    .speaker1, .speaker2, .speaker3, .speaker4, .speaker5 {
-      flex: 0 0 calc(50% - 30px);  
-    }
-    .speaker1,.speaker5{
-     padding-left: 15px;
-    }
-    .speaker4{
-      padding-right: 15px;
-    }
-  
-    .button-container {
-      text-align: center;
-      margin-top: 180px;
-      width: 100%;
-      margin-left: -30px;
-    }
-    .look-button{
-      font-size: x-large;
-      width: 100%;
-    }
-    .speaker6 {
-      transform: scale(0.8); 
-      flex: 0 0 calc(60% - 20px); 
-      margin-left: auto; 
-      margin-bottom: -100px;
-      margin-right: -8px;
-      padding-right: 10px;
-    }
-    .speaker-boxes img {
-      width: 100%;
-      height: auto;
-    }
-    .speakers-header{
-      width: 100%;
-    }
-    .speakers-header h2{
-      font-size: 60px;
-      text-align: center;
-      margin: 0;
-    }
-    .speakers-header h4{
-      font-size: 24px;
-      text-align: center;
-      line-height: 2;
-    }
+}
+@media (max-width: 400px) {
+  .look-button {
+    font-size: large;
+    width: 100%;
   }
-
-  @media(max-width: 600px){
-    .look-button{
-      font-size: large;
-      width: 100%;
-    }
-  }
-  @media(max-width: 400px){
-    .look-button{
-      font-size: large;
-      width: 100%;
-    }
-  }
-  
-
-
-
-  
+}

@@ -1,12 +1,21 @@
 @font-face {
   font-family: "Neue Machina";
-  src: url("../fonts/NeueMachina/NeueMachina-Regular.otf") format("truetype");
-  font-weight: normal;
+  src: url("../../fonts/PPNeueMachina/PPNeueMachina-Regular.otf")
+    format("truetype");
   font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Neue Montreal Mono";
+  src: url("../../fonts/NeueMontreal/PPNeueMontrealMono-Medium.otf");
+  font-style: normal;
+  font-weight: normal;
 }
 
 :root {
-  --mainFont: "Neue Machina";
+  --primaryFont: "Neue Machina";
+  --secondaryFont: "Neue Montreal Mono";
   --font-size-h1-desktop: 120px;
   --font-size-h1-mobile: 80px;
   --font-size-h2: 48px;
@@ -15,7 +24,7 @@
 }
 
 * {
-  font-family: var(--mainFont);
+  font-family: var(--primaryFont), sans-serif;
 }
 
 h1 {

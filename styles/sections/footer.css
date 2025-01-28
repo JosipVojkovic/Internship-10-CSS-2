@@ -6,11 +6,12 @@
   font-style: normal;
 }
 @font-face {
-    font-family: "Neue Machina";
-    src: url("../../fonts/NeueMachina/NeueMachina-Regular.otf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
-  }
+  font-family: "Neue Machina";
+  src: url("../../fonts/PPNeueMachina/PPNeueMachina-Regular.otf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 
 .footer-container {
   position: relative;
@@ -58,7 +59,7 @@
   line-height: 120px;
   letter-spacing: -5.02px;
   text-transform: uppercase;
-  font-family: var(--mainFont);
+  font-family: var(--primaryFont);
   font-style: normal;
   text-align: center;
   margin-bottom: 2rem;
@@ -155,7 +156,7 @@
   text-align: center;
   font-weight: bold;
   letter-spacing: -5px;
-  font-family: var(--mainFont);
+  font-family: var(--primaryFont);
   z-index: 1;
 }
 
@@ -258,7 +259,7 @@
   padding: 0 2rem;
   color: #ccc;
   line-height: 1.5;
-  font-family: var(--mainFont);
+  font-family: var(--primaryFont);
 }
 
 .credits-left {
@@ -281,7 +282,7 @@
     font-weight: bold;
     line-height: 62px;
     letter-spacing: -5.02px;
-    font-family: var(--mainFont);
+    font-family: var(--primaryFont);
     font-style: normal;
     text-align: center;
     margin-bottom: 2rem;
@@ -311,7 +312,7 @@
     text-align: center;
     margin-top: 5rem;
     margin-bottom: 2rem;
-    font-family: var(--mainFont);
+    font-family: var(--primaryFont);
   }
 
   .social-links {
@@ -354,7 +355,7 @@
 
   .line {
     height: 20px;
-   
+
     background-image: radial-gradient(
       circle,
       rgba(216, 214, 214, 0.5) 0.3px,

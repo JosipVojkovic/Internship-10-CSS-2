@@ -3,18 +3,23 @@
 @import url(./definitions/fonts.css);
 @import url(./definitions/colors.css);
 
-
 /* sections */
 
 @import url(./sections/header.css);
 @import url(./sections/footer.css);
 @import url(./sections/speakers.css);
 @import url(./sections/location.css);
+@import url(sections/conference.css);
+@import url(sections/lectures.css);
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 .main-container {
@@ -29,4 +34,3 @@
     padding: 0;
   }
 }
-
