@@ -1,0 +1,67 @@
+@font-face {
+  font-family: "Neue Montreal";
+  src: url("../../fonts/NeueMontreal/PPNeueMontrealMono-Thin.otf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.gallery-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url("../../images/gallery-background.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.background-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  text-align: center;
+  color: #fff;
+}
+
+.content h1 {
+  font-size: 120px;
+  text-transform: uppercase;
+}
+
+.bottom-text {
+  font-family: "Neue Montreal";
+  position: absolute;
+  bottom: 50px;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+  line-height: 16px;
+}
+
+.arrow-icon {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  width: 62.28px;
+  height: 62.4px;
+  transform: rotate(45px);
+}
+
+.arrow-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
