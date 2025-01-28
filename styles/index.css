@@ -10,6 +10,7 @@
 @import url(./sections/speakers.css);
 @import url(./sections/location.css);
 @import url(sections/conference.css);
+@import url(sections/lectures.css);
 
 * {
   margin: 0;
