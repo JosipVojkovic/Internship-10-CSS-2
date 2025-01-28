@@ -5,14 +5,14 @@
 
 .lectures .image-container {
   position: relative;
-  background: url(../../images/Lectures/Lecture.svg);
+  background: url(../../images/Lectures/Lecture.svg) center;
   background-size: cover;
   height: 1571px;
   padding-top: 34%;
   z-index: 3;
 }
 
-.image-container h1 {
+.lectures .image-container h1 {
   position: sticky;
   top: 15%;
   left: 0;
@@ -76,6 +76,25 @@
   left: 0;
 }
 
+.schedule-nav .days .active,
+.schedule-nav .occupations .active {
+  color: var(--orangeColor);
+}
+
+.schedule-nav .days .active::after,
+.schedule-nav .occupations .active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--orangeColor);
+  transition: width 0.3s ease, left 0.3s ease;
+  display: block;
+  border-radius: 10px;
+}
+
 .lecture-schedule .lectures-list {
   display: flex;
   flex-direction: column;
@@ -89,6 +108,7 @@
   align-items: center;
   padding: 30px 30px;
   cursor: pointer;
+  column-gap: 20px;
 }
 
 .lectures-list .lecture-info-container:hover {
@@ -184,4 +204,58 @@
   background: radial-gradient(circle, rgba(23, 22, 21, 0.3), transparent 30%);
   background-size: 8px 8px;
   background-repeat: repeat-x;
+}
+
+@media screen and (max-width: 1150px) {
+  .lectures-list .lecture-details {
+    width: 645px;
+  }
+}
+
+@media screen and (max-width: 940px) {
+  .schedule-nav .occupations,
+  .lectures-list .plus-icon,
+  .lectures-list .speaker-img {
+    display: none;
+  }
+
+  .lectures-list .lecture-info-container {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  .lectures-list .lecture-time {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    text-align: left;
+  }
+
+  .lectures-list .lecture-details {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .lectures .image-container {
+    height: 100vh;
+    padding-top: 50%;
+  }
+
+  .lectures .image-container h1 {
+    top: 7%;
+    font-size: 40px;
+  }
+
+  .lecture-schedule .lectures-list {
+    padding: 20px 0;
+  }
+
+  .lectures-list .lecture-info-container {
+    padding: 30px 0;
+  }
+
+  .lectures-list .lecture-details h3 {
+    font-size: 16px;
+  }
 }
