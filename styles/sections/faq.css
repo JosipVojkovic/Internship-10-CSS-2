@@ -135,6 +135,7 @@
       line-height: 24px;
       letter-spacing: -1%;
       font-family: var(--mainFont);
+      color: #FFFFFFB2;
     }
   
     .first-question p {
