@@ -1,6 +1,7 @@
 .lectures {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .lectures .image-container {
@@ -32,7 +33,7 @@
   display: flex;
   flex-direction: column;
   background-color: var(--backgroundColor);
-  padding: 20px;
+  padding: 20px 20px 100px 20px;
 }
 
 .lecture-schedule .schedule-nav {
@@ -222,6 +223,13 @@
   transform: translateY(0);
 }
 
+.orange-section-breaker {
+  position: absolute;
+  bottom: -30px;
+  width: 100%;
+  height: 40px;
+}
+
 @keyframes fadeInDown {
   from {
     opacity: 0;
@@ -264,6 +272,10 @@
 }
 
 @media screen and (max-width: 730px) {
+  .lecture-schedule {
+    padding-bottom: 30px;
+  }
+
   .lectures .image-container {
     height: 100vh;
     padding-top: 50%;
