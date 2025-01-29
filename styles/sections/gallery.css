@@ -6,7 +6,7 @@
   font-style: normal;
 }
 
-.gallery-section-mobile {
+.mobile-gallery-section {
   display: none;
 }
 
@@ -73,6 +73,9 @@
 @media screen and (max-width: 767px) {
   .gallery-section {
     display: none;
+  }
+  .mobile-gallery-section{
+    display: block;
   }
   .mobile-gallery-section .mobile-background-overlay {
     background-image: url(../../images/gallery_mobile.png);
