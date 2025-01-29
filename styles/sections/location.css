@@ -1,3 +1,9 @@
+.border1 {
+  width: 100%;
+  z-index: 10;
+  position: relative;
+  top: -10px;
+}
 .location {
   background-color: #085f59;
   position: relative;
