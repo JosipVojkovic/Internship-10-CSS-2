@@ -27,7 +27,7 @@
 .location h2 {
   color: white;
   text-align: center;
-  padding: 20px;
+  padding: 20px 0;
   font-size: 140px;
   font-family: var(--mainFont);
   font-weight: 500;
@@ -36,7 +36,6 @@
   padding-top: 50px;
   margin-bottom: 160px;
   width: 100%;
-  padding-left: 20px;
 }
 .location-content {
   display: flex;
@@ -269,6 +268,7 @@
   }
   .location-header h2 {
     font-size: 65px;
+    letter-spacing: -2px;
   }
   .location-date {
     margin-top: 20px;

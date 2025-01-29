@@ -1,8 +1,17 @@
 .sponsors {
+  position: relative;
   display: flex;
   flex-direction: column;
   background-color: var(--backgroundColor);
-  padding: 20px 20px 150px 20px;
+  padding: 100px 20px 150px 20px;
+}
+
+.sponsors > img {
+  position: absolute;
+  top: -10px;
+  left: 0;
+  z-index: 2;
+  width: 100vw;
 }
 
 .sponsors .sponsors-heading-container {
@@ -96,13 +105,13 @@
 
 @keyframes fadeLogo {
   0% {
-    opacity: 0; /* Početni opacitet je 0 (nevidljivo) */
+    opacity: 0;
   }
   50% {
-    opacity: 1; /* Na polovici animacije tekst postaje vidljiv */
+    opacity: 1;
   }
   100% {
-    opacity: 0; /* Na kraju animacije tekst opet postaje nevidljiv */
+    opacity: 0;
   }
 }
 
@@ -234,7 +243,7 @@
   right: 0;
   top: 0;
   height: 100%;
-  width: 6px; /* Debljina linije */
+  width: 6px;
   background: radial-gradient(circle, rgba(23, 22, 21, 0.3), transparent 30%);
   background-size: 8px 8px;
   background-repeat: repeat-y;
@@ -246,7 +255,7 @@
   bottom: 0;
   left: 5%;
   width: 90%;
-  height: 6px; /* Debljina linije */
+  height: 6px;
   background: radial-gradient(circle, rgba(23, 22, 21, 0.3), transparent 30%);
   background-size: 8px 8px;
   background-repeat: repeat-x;
@@ -267,6 +276,12 @@
 
   .sponsor-details .open-positions span {
     font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  .sponsors .sponsors-heading {
+    top: 30px;
   }
 }
 
@@ -293,7 +308,7 @@
   }
 
   .sponsor-logo-container {
-    flex: 1 1 calc(50% - 12px); /* 2 po redu, 50% širine */
+    flex: 1 1 calc(50% - 12px);
     padding: 30px 0;
   }
 
