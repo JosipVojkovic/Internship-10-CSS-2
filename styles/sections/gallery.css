@@ -1,0 +1,151 @@
+@font-face {
+  font-family: "Neue Montreal";
+  src: url("../../fonts/NeueMontreal/PPNeueMontrealMono-Thin.otf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.mobile-gallery-section {
+  display: none;
+}
+
+.gallery-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url("../../images/gallery-background.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.background-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  text-align: center;
+  color: #fff;
+}
+
+.content h1 {
+  font-size: 120px;
+  text-transform: uppercase;
+}
+
+.bottom-text {
+  font-family: "Neue Montreal";
+  position: absolute;
+  bottom: 50px;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+  line-height: 16px;
+}
+
+.arrow-icon {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  width: 62.28px;
+  height: 62.4px;
+  transform: rotate(45px);
+}
+
+.arrow-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 767px) {
+  .gallery-section {
+    display: none;
+  }
+  .mobile-gallery-section{
+    display: block;
+  }
+  .mobile-gallery-section .mobile-background-overlay {
+    background-image: url(../../images/gallery_mobile.png);
+    background-position: 0px -20vw;
+    background-size: 100%;
+    height: 400px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .mobile-gallery-section .mobile-background-overlay::before {
+    content: "";
+    background-image: url(../../images/rewind.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 388px;
+    position: absolute;
+    opacity: 80%;
+    padding-right: 220px;
+    padding-bottom: 120px;
+    mix-blend-mode: lighten;
+  }
+
+  .mobile-background-overlay > * {
+    position: absolute;
+  }
+
+  .mobile-content {
+    text-align: center;
+    color: #fff;
+  }
+
+  .mobile-content h1 {
+    font-size: 64px;
+    color: #eaeaea;
+    text-transform: uppercase;
+  }
+
+  .mobile-bottom-text {
+    font-family: "Neue Montreal";
+    position: absolute;
+    bottom: 50px;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    line-height: 14px;
+  }
+
+  .mobile-arrow-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 24px;
+    height: 24px;
+    transform: rotate(45px);
+  }
+
+  .mobile-arrow-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}

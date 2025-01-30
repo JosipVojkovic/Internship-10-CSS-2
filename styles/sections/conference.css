@@ -20,6 +20,7 @@
 .conference-info .sticky-duck-container {
   height: 850px;
   position: relative;
+ 
 }
 
 .conference-info .sticky-duck {
@@ -96,6 +97,7 @@
 @media screen and (max-width: 830px) {
   .conference-info {
     position: relative;
+    overflow: hidden;
     flex-direction: column;
     row-gap: 100px;
     padding: 40px 15px 200px 15px;

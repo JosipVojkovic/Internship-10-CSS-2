@@ -7,6 +7,10 @@
 
 @import url(./sections/header.css);
 @import url(./sections/footer.css);
+@import url(./sections/registration.css);
+@import url(./sections/gallery.css);
+@import url(./sections/testimony.css);
+@import url(./sections/faq.css);
 @import url(./sections/speakers.css);
 @import url(./sections/location.css);
 @import url(sections/conference.css);
