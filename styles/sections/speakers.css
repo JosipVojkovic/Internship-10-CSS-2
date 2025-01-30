@@ -116,10 +116,16 @@
   color: black;
   font-family: var(--primaryFont), sans-serif;
   margin-bottom: auto;
-  font-weight: 500;
+  font-weight: 600;
+  line-height: 16px;
   font-size: 14px;
   margin-left: auto;
   margin-top: 60px;
+  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+.look-button:hover{
+  cursor: pointer;
+  transform: scale(1.2);
 }
 .autoshow {
   opacity: 0;
@@ -181,6 +187,7 @@
   .look-button {
     font-size: x-large;
     width: 100%;
+ margin-bottom: 150px;
   }
   .speaker6 {
     transform: scale(0.8);
@@ -215,9 +222,17 @@
     width: 100%;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 530px) {
   .look-button {
     font-size: large;
     width: 100%;
+    margin-top: 150px;
+  }
+}
+@media (max-width: 400px) {
+  .look-button {
+    font-size: medium;
+    width: 100%;
+    margin-top: 250px;
   }
 }
