@@ -6,8 +6,10 @@
 
 .lectures .image-container {
   position: relative;
+
   background: url(../../images/Lectures/Lecture.svg) center;
   background-size: cover;
+
   height: 1571px;
   padding-top: 34%;
   z-index: 3;
@@ -17,22 +19,27 @@
   position: sticky;
   top: 15%;
   left: 0;
+
   width: 100%;
+
   text-align: center;
 }
 
 .lectures .section-breaker {
   position: absolute;
-  width: 100vw;
   bottom: 0;
   left: 0;
+
+  width: 100vw;
   z-index: 4;
 }
 
 .lecture-schedule {
   display: flex;
   flex-direction: column;
+
   background-color: var(--backgroundColor);
+
   padding: 20px 20px 100px 20px;
 }
 
@@ -50,10 +57,12 @@
 .schedule-nav .days a,
 .schedule-nav .occupations a {
   position: relative;
+
   text-decoration: none;
   color: rgba(23, 22, 21, 1);
   font-family: var(--secondaryFont), sans-serif;
   font-size: var(--font-size-p);
+
   padding: 15px 25px;
 }
 
@@ -63,11 +72,15 @@
   position: absolute;
   bottom: 0;
   left: 50%;
+  display: block;
+
   width: 0;
   height: 2px;
+
   background-color: var(--orangeColor);
+
   transition: width 0.3s ease, left 0.3s ease;
-  display: block;
+
   border-radius: 10px;
 }
 
@@ -88,17 +101,22 @@
   position: absolute;
   bottom: 0;
   left: 0;
+  display: block;
+
   width: 100%;
   height: 2px;
+
   background-color: var(--orangeColor);
+
   transition: width 0.3s ease, left 0.3s ease;
-  display: block;
+
   border-radius: 10px;
 }
 
 .lecture-schedule .lectures-list {
   display: flex;
   flex-direction: column;
+
   padding: 20px;
   margin-top: 100px;
 }
@@ -107,9 +125,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 30px;
-  cursor: pointer;
   column-gap: 20px;
+
+  padding: 30px 30px;
+
+  cursor: pointer;
 }
 
 .lectures-list .lecture-info-container:hover {
@@ -124,11 +144,13 @@
   display: flex;
   flex-direction: column;
   row-gap: 7px;
+
   font-family: var(--secondaryFont), sans-serif;
   font-weight: 500;
   text-align: right;
-  width: 131px;
   font-size: var(--font-size-p);
+
+  width: 131px;
 }
 
 .lectures-list .lecture-time span:nth-of-type(2),
@@ -141,14 +163,17 @@
   display: flex;
   flex-direction: column;
   row-gap: 7px;
+
   width: 745px;
 }
 
 .lecture-details h3 {
   display: flex;
+
   font-size: 18px;
   font-weight: 600;
   color: rgba(23, 22, 21, 1);
+
   transform: translateY(-20px);
   opacity: 0;
   transition: opacity 0.2s ease-out 0.1s, transform 0.2s ease-out 0.1s;
@@ -162,14 +187,17 @@
 
 .lecture-details .orange-elipse {
   height: 25px;
+
   background-color: var(--orangeColor);
-  border-radius: 50%;
-  padding: 4px 10px;
-  margin-right: 10px;
   font-size: var(--font-size-p);
   font-family: var(--secondaryFont), sans-serif;
   font-weight: 500;
   color: white;
+
+  border-radius: 50%;
+
+  padding: 4px 10px;
+  margin-right: 10px;
 }
 
 .lectures-list .speaker-img {
@@ -180,6 +208,7 @@
   position: absolute;
   top: -80px;
   right: 0;
+
   opacity: 0;
   transition: 0.5s ease;
 }
@@ -188,6 +217,7 @@
   position: relative;
   display: flex;
   align-items: center;
+
   width: 20px;
   height: 20px;
 }
@@ -195,24 +225,32 @@
 .lectures-list .plus-icon div:first-of-type {
   width: 20px;
   height: 2px;
+
   background-color: rgba(23, 22, 21, 1);
+
   border-radius: 5px;
 }
 
 .lectures-list .plus-icon div:last-of-type {
   position: absolute;
-  width: 2px;
-  height: 20px;
-  background-color: rgba(53, 47, 52, 1);
   top: 0;
   left: 50%;
+
+  width: 2px;
+  height: 20px;
+
+  background-color: rgba(53, 47, 52, 1);
+
   transform: translateX(-50%);
+
   border-radius: 5px;
 }
 
 .lectures-list hr {
   border: none;
+
   height: 6px;
+
   background: radial-gradient(circle, rgba(23, 22, 21, 0.3), transparent 30%);
   background-size: 8px 8px;
   background-repeat: repeat-x;
@@ -226,6 +264,7 @@
 .orange-section-breaker {
   position: absolute;
   bottom: -30px;
+
   width: 100%;
   height: 40px;
 }
@@ -262,7 +301,9 @@
   .lectures-list .lecture-time {
     flex-direction: row;
     justify-content: space-between;
+
     width: 100%;
+
     text-align: left;
   }
 
